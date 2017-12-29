@@ -1,4 +1,4 @@
-[![](https://jitpack.io/v/liqinew/slidenavigation.svg)](https://jitpack.io/#liqinew/slidenavigation)
+[![](https://jitpack.io/v/liqinew/widgetutils.svg)](https://jitpack.io/#liqinew/widgetutils)
 [![](https://img.shields.io/badge/%E4%BD%9C%E8%80%85-%E6%9D%8E%E5%A5%87-orange.svg)](https://github.com/LiqiNew)
 # WidgetUtils
 支持异步弹出软键盘，实时弹出软键盘，关闭软键盘，软键盘弹出不遮挡指定区域
@@ -19,10 +19,10 @@ allprojects {
 }
 ```
 
-**2：依赖SlideNavigation**<br>
+**2：依赖WidgetUtils**<br>
 
 ```gradle
-compile 'com.github.liqinew:slidenavigation:V.1.0'
+compile 'com.github.liqinew:widgetutils:V.1.0.0'
 ```
 ### 使用方式 ###
 **AndroidMainFest.xml中对使用Activity属性设置android:windowSoftInputMode="adjustResize"。可以多个设置。但是必须要有一个设置为adjustResize**
