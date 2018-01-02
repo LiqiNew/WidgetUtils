@@ -26,7 +26,7 @@ compile 'com.github.liqinew:widgetutils:V.1.0.0'
 ```
 ### 使用方式 ###
 **AndroidMainFest.xml中对使用Activity属性设置android:windowSoftInputMode="adjustResize"。可以多个设置。但是必须要有一个设置为adjustResize**
-####建议XML视图布局样式
+#### 建议XML视图布局样式
 
 * 滑动效果XML布局建议样式
 ```xml
@@ -74,7 +74,7 @@ compile 'com.github.liqinew:widgetutils:V.1.0.0'
 
 </ScrollView>
 ```
-####代码调用
+#### 代码调用
 
 ##### 软键盘弹出不遮挡指定区域
 ```java
