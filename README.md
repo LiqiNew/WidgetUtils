@@ -22,7 +22,7 @@ allprojects {
 **2：依赖WidgetUtils**<br>
 
 ```gradle
-compile 'com.github.liqinew:widgetutils:V.1.0.0'
+compile 'com.github.liqinew:widgetutils:V.1.0.1'
 ```
 ### 使用方式 ###
 **AndroidMainFest.xml中对使用Activity属性设置android:windowSoftInputMode="adjustResize"。可以多个设置。但是必须要有一个设置为adjustResize**
