@@ -89,37 +89,58 @@ WidgetKeepOutNoUtils.openScrollViewKeepOutNoUtils().start(mainLayout, bottomLayo
 *
 * @param activity 依赖界面
 */
-WidgetKeepOutNoUtils.openReduceSlidingKeepOutNoUtils(this).start(mainLayout, logoLayout, bottomLayout);
+WidgetKeepOutNoUtils.openReduceSlidingKeepOutNoUtils(Activity activity)
+//设置Y轴缩放值。系统版本>=21
+.setY(120)
+//设置X轴缩放值。系统版本>=21
+.setX(120)
+//开启效果
+.start(mainLayout, logoLayout, bottomLayout);
 ```
-##### 软键盘弹出和关闭
+##### 软键盘弹出和关闭(静态调用)
 ```java
- /**
-* 异步展开editText键盘并且获取输入焦点（dialog里面展开键盘需要异步展开）
+/**
+* 异步延迟展开指定的editText对应的键盘，并且获取输入焦点（dialog里面展开键盘需要异步展开）
 *
-* @param editText
+* @param editText 指定的editText
 * @param time     延迟多久展示键盘
 */
 ViewOperatetUtils.asynUnfoldEditTextIn(final EditText editText, long time) ;
 
 /**
-* 展开editText键盘并且获取输入焦点
+* 展开指定的editText对应的软键盘，并且获取输入焦点
 *
-* @param editText
+* @param editText 指定的editText
 */
 ViewOperatetUtils.unfoldEditTextIn(EditText editText);
 
 /**
-* 关闭输入软键盘
+* 关闭指定的EditText对应的输入软键盘
 *
-* @param editText
+* @param editText 指定的editText
 */
 ViewOperatetUtils.closeEditKeyboard(EditText editText);
 
 /**
-* 异步关闭输入软键盘
+* 异步延迟关闭指定EditText对应的输入软键盘
 *
-* @param editText
+* @param editText 指定的editText
 * @param time     延迟多久关闭键盘
 */
 ViewOperatetUtils.asynCloseEditKeyboard(final EditText editText, long time);
+
+/**
+* 关闭当前界面弹出的软键盘。不需要指定editText
+*
+* @param activity
+*/
+ViewOperatetUtils.allCloseEditKeyboard(Activity activity);
+
+/**
+* 异步延迟关闭当前界面弹出的软键盘。不需要指定editText
+*
+* @param activity
+* @param time     延迟多久展示键盘
+*/
+ViewOperatetUtils.allAsynCloseEditKeyboard(final Activity activity, long time);
 ```

@@ -60,7 +60,10 @@ public class TestFlexibleWidgetActivity extends AppCompatActivity implements Vie
                 //指定休眠时间后弹出软键盘
                 ViewOperatetUtils.asynUnfoldEditTextIn(mMixtureAccounts,100);
                 //软键盘弹出不遮挡指定区域-->滑动+缩放效果开启
-                WidgetKeepOutNoUtils.openReduceSlidingKeepOutNoUtils(this).start(mMixtureMainLayout, mMixtureImage, mMixtureSwitch);
+                WidgetKeepOutNoUtils.openReduceSlidingKeepOutNoUtils(this)
+                        .setY(120)
+                        .setX(120)
+                        .start(mMixtureMainLayout, mMixtureImage, mMixtureSwitch);
                 break;
             case R.id.mixture_switch:
                 mSlideLayout.setVisibility(View.VISIBLE);
